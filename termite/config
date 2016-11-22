@@ -1,0 +1,57 @@
+[colors]
+
+# special
+foreground      = #fffbea
+foreground_bold = #666699
+cursor          = #666699
+background      = #000001
+
+# black
+color0  = #333366
+color8  = #333399
+
+# red
+color1  = #6666cc
+color9  = #9999ff
+
+# green
+color2  = #0099cc
+color10 = #00ccff
+
+# yellow
+color3  = #3366cc
+color11 = #6699ff
+
+# blue
+color4  = #006699
+color12 = #0099cc
+
+# magenta
+color5  = #0066ff
+color13 = #0099ff
+
+# cyan
+color6  = #669999
+color14 = #66cccc
+
+# white
+color7  = #99cccc
+color15 = #ccffff
+
+[options]
+resize_grip = false
+scroll_on_output = false
+scroll_on_keystroke = true
+audible_bell = false
+visible_bell = false
+mouse_autohide = false
+allow_bold = true
+dynamic_title = true
+urgent_on_bell = true
+clickable_url = true
+font = Inconsolata-dz for Powerline 12
+scrollback_lines = 1000
+search_wrap = true
+cursor_blink = system
+cursor_shape = block
+browser = firefox
