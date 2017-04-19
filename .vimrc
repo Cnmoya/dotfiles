@@ -5,6 +5,11 @@ let base16colorspace=256
 colorscheme desert
 let &rtp = '~/.vim/bundle/vimtex,' . &rtp
 
+setlocal spell spelllang=es
+
+runtime plugins/spellfile.vim
+set spellfile=~/.vim/dict.add
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set omnifunc=syntaxcomplete#Complete
@@ -69,5 +74,6 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+nmap ns :set nospell
 " To ignore plugin indent changes, instead use:
 "filetype plugin on]

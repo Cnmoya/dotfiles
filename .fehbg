@@ -1,0 +1,2 @@
+#!/bin/sh
+feh  --bg-scale '/home/cnmoya/Downloads/bg.png' 
