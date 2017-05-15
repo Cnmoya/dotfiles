@@ -1,11 +1,13 @@
 set nocompatible
+set completeopt=longest,menuone,preview
 set path+=**
 set nu 
-set spellfile=~/.config/nvim/spell/en.utf-8.add
+setlocal spell spelllang=es_es
 set wildmode=longest,list,full
 set wildmenu
 set encoding=utf-8
 colorscheme peachpuff
+set spellfile=$HOME/.local/share/nvim/site/spell/es.utf-8.add
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 set foldmethod=indent
@@ -24,7 +26,5 @@ set backspace=indent,eol,start
 
 set  background=dark
 syntax on
-set rtp+="~/.config/nvim"
 set nospell
-nmap ns :set spell
 
