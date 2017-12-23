@@ -1,20 +1,18 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export TERM="xterm-256color"
+
 # Path to your oh-my-zsh installation.
+export PATH=~/anaconda3/bin:$PATH
+export ZSH=/Users/cnmoya/.oh-my-zsh
 
-export ZSH=/home/cnmoya/.oh-my-zsh
-
-# Set name of the theme to load. Optionally, if you set this to "random"
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerline"
-POWERLINE_HIDE_HOST_NAME="true"
-POWERLINE_NO_BLANK_LINE="true"
-POWERLINE_PATH="short"
-POWERLINE_HIDE_GIT_PROMPT_STATUS="true"
+ZSH_THEME="robbyrussell"
+
 # Uncomment the following line to use case-sensitive completion.
-CASE_SENSITIVE="true"
+# CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
@@ -33,10 +31,10 @@ CASE_SENSITIVE="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"
+# COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -55,10 +53,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git debian gnu-utils sudo pip)
-
-setxkbmap -option grp:alt_shift_toggle us,es       
-
+plugins=(git brew pip)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -67,7 +62,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-export LANG=en_US.UTF-8
+# export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -86,12 +81,9 @@ export LANG=en_US.UTF-8
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
+alias vim="nvim"
+alias dfits="~/eclipse-5.0.0/qfits/bin/dfits"
+alias fitsort="~/eclipse-5.0.0/qfits/bin/fitsort"
 alias stilts="~/topcat/stilts"
-alias topcat="~/topcat/topcat"
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-stty ixany
-stty ixoff -ixon
+. /usr/local/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
 set -o vi
